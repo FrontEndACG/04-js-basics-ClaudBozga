@@ -5,3 +5,4 @@
 // String: "racecar"
 // Example Output:
 // The string "racecar" is a palindrome.
+
