@@ -13,7 +13,7 @@ var outputParagraph = document.getElementById('output');
 function adaugaNumar() {
     outputParagraph.innerHTML = '';
     var sum = 0;
-    var arr = arrInput.value.split(" ");
+    var arr = arrInput.value.split(", ");
     for (var i = 0; i <= arr.length - 1; i++) {
         sum += Number(arr[i]);
     }

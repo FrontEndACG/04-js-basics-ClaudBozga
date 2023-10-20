@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <script src="app.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Smallest Largest</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+        <!-- step 1: ciordit cod de la print 1 la n -->
+		<div class="container">
+			<h2>Smallest Largest</h2>
+			<label for="number">Introduceti numerele,separate prin <span id="singur"> virgula si spatiu</span> </label>
+			<input type="text" id="arr" />
+			<button onclick="adaugaNumar()">Calculeaza</button>
+			<p>Rezultatul aici: </p>
+            <div class="coloane">
+                <p>Smallest: <span id="output"></span></p>
+                <p>Largest: <span id="output2"></span></p>
+            </div>
+		</div>
+		<script src="app.js"></script>
+	</body>
 </html>
