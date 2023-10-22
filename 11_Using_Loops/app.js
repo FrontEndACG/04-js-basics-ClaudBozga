@@ -12,20 +12,21 @@
 // 7 x 10 = 70
 
 
+// ma chinui sa se afiseze dar gandirea am gandit o ok
+
 var nrInput = document.getElementById('nr');
 var outputParagraph = document.getElementById('output');
-var outputParagraph2 = document.getElementById('output2');
-var outputParagraph3 = document.getElementById('output3');
 
 function adaugaNumar() {
     outputParagraph.innerHTML = '';
-    outputParagraph2.innerHTML = '';
-    outputParagraph3.innerHTML = '';
+    var result = 1;
 
     var nr = Number(nrInput.value);
     for (var i = 1; i <= 10; i++) {
-        outputParagraph.innerHTML = ;
-        outputParagraph2.innerHTML = ;
-        outputParagraph3.innerHTML = ;
+        outputParagraph.innerHTML += "<p>";
+        result = nr * i;
+        console.log(nr + " x " + i + " = " + result);
+        outputParagraph.innerHTML = nr + " x " + i + " = " + result;
+        outputParagraph.innerHTML += "</p></br>";
+        }
     }
-}
