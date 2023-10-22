@@ -19,17 +19,22 @@ function adaugaNumar() {
     outputParagraph.innerHTML = '';
     var str = strInput.value;
     var substr = elInput.value;
-    var start = [];
-    var istart = 0;
-    var contine = 0;
+    // var contine = 0;
+    var indexArr = [];
     for (var i = 0; i < substr.length; i++) {
         for (var j = 0; j < str.length; j++) {
-            if (substr[i] === str[j]) {
-                start[istart] = substr[i];
+            if (indexArr.length === 0) {
+                if (substr[i] === str[j]) {
+                    indexArr.push(j);
+                    i++;
+                }
+            } else if ((substr[i] === str[j]) && (j - indexArr[indexArr.length -1] === 1)) {
+                indexArr.push(j);
                 i++;
-                console.log(start);
+            } else if (j - indexArr[indexArr.length -1] != 1) {
+                indexArr = [];
             }
-            istart = start.length;
+            console.log(indexArr, i, j);
         }
     }
 

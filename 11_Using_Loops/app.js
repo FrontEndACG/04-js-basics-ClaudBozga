@@ -18,15 +18,16 @@ var nrInput = document.getElementById('nr');
 var outputParagraph = document.getElementById('output');
 
 function adaugaNumar() {
+    console.log("bnx");
     outputParagraph.innerHTML = '';
     var result = 1;
 
     var nr = Number(nrInput.value);
     for (var i = 1; i <= 10; i++) {
-        outputParagraph.innerHTML += "<p>";
         result = nr * i;
-        console.log(nr + " x " + i + " = " + result);
-        outputParagraph.innerHTML = nr + " x " + i + " = " + result;
-        outputParagraph.innerHTML += "</p></br>";
-        }
+
+    var resultItem = document.createElement("p");
+    resultItem.textContent = nr + " x " + i + " = " + result;
+    outputParagraph.appendChild(resultItem);
     }
+}
