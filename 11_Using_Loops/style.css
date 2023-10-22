@@ -9,10 +9,10 @@ body {
 	display: flex;
 	flex-direction: column;
     text-align: center;
-	gap: 7px;
+	gap: 5px;
 	background-color: rgb(239, 157, 50);
-	padding: 15px;
-	border: 3px solid rgb(202, 236, 79);
+	padding: 10px;
+	border: 1px solid rgb(202, 236, 79);
 	border-radius: 10px;
 	font-family: monospace;
     font-size: large;
@@ -23,11 +23,11 @@ body {
     font-weight: bolder;
 }
 
-#output {
-    margin-top: 0px;
-}
-
-#butt {
-	width: 100px;
-	align-self: center;
+.coloane {
+    display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+	align-items: center;
+	border-radius: 25%;
+	background-color: rgb(157, 218, 78);
 }

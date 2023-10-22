@@ -6,15 +6,32 @@
 // Substring to check for: "powerful"
 // Example Output:
 // The string contains the substring "powerful."
-// Using Loops (for and while): Multiplication 
-// Table: Display the multiplication table for 
-// a given number using a for loop.
 
-// Example Input:
-// Number: 7
-// Example Output:
-// Multiplication Table for 7:
-// 7 x 1 = 7
-// 7 x 2 = 14
-// ...
-// 7 x 10 = 70
+
+// nu mi iese :<<< 
+// ce am facut aici verifica daca contin caracterele si atat.. 
+
+var strInput = document.getElementById('str');
+var elInput = document.getElementById('element');
+var outputParagraph = document.getElementById('output');
+
+function adaugaNumar() {
+    outputParagraph.innerHTML = '';
+    var str = strInput.value;
+    var substr = elInput.value;
+    var start = [];
+    var istart = 0;
+    var contine = 0;
+    for (var i = 0; i < substr.length; i++) {
+        for (var j = 0; j < str.length; j++) {
+            if (substr[i] === str[j]) {
+                start[istart] = substr[i];
+                i++;
+                console.log(start);
+            }
+            istart = start.length;
+        }
+    }
+
+    // outputParagraph.innerHTML = "The string contains the substring " + '"' + substr + '"';
+}
