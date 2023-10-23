@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Counting Characters</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+        <!-- step 1: ciordit cod de la print 1 la n -->
+		<div class="container">
+			<h2>Counting Characters</h2>
+			<label for="str">Introduceti textul dorit</label>
+			<input type="text" id="str" />
+            <form action="">
+                <input type="checkbox" id="option1" class="messageCheckbox" name="option1" value="upper">
+                <label for="option1"> UPPERCASE LETTERS</label><br>
+                <input type="checkbox" id="option2" class="messageCheckbox" name="option2" value="lower">
+                <label for="option2"> lowercase letters</label><br>
+                <input type="checkbox" id="option3" class="messageCheckbox" name="option3" value="numbers">
+                <label for="option3"> numbers</label><br><br>
+              </form>
+			<button onclick="adaugaNumar()" id="butt">Calculeaza</button>
+			<p>Rezultatul aici: </p>
+            <div class="coloane">
+                <div>
+                    <p>UPPERCASE <br /> LETTERS: </p>
+                    <span id="output"></span>
+                </div>
+                <div>
+                    <p>lowercase <br /> letters: </p>
+                    <span id="output2"></span>
+                </div>
+                <div>
+                    <p>NUM83R5: </p>
+                    <span id="output3"></span>
+                </div>
+            </div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

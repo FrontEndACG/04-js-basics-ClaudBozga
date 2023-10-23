@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Search for an Element</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+        <!-- step 1: ciordit cod de la print 1 la n -->
+		<div class="container">
+			<h2>Search for an Element</h2>
+			<label for="arr">Introduceti numerele, separate prin <span id="singur"> virgula si spatiu</span> </label>
+			<input type="text" id="arr" />
+            <label for="element">Introduceti un <span id="singur"> singur</span> numar</label>
+			<input type="text" id="element" />
+			<button onclick="adaugaNumar()">Calculeaza</button>
+			<p>Rezultatul aici: </p>
+            <p id="output"></p>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
